@@ -8,8 +8,9 @@ html,body{
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    position: absolute;
+    position: sticky;
     height: 110px;
+    width: 100%;
     top: 0;
     left: 0;
     right: 0;
@@ -21,7 +22,12 @@ html,body{
 }
 
 .header-content{
-    display: flex;
+    justify-content: space-between;
+    display: flex; 
+    align-items: center;
+    height: 100%; 
+    padding: 0 20px; 
+    
 }
 
 .header-link{
@@ -29,11 +35,78 @@ html,body{
     list-style-type: none;
 }
 
+.header-link li{
+    margin: 0 20px;
+}
+
 .main-area{
     text-align: center;
     font-size: 70px;
     color: #000;
 }
-.description-all{
+
+.description-title{
+    font-weight: bold;
+}
+
+.main-content-4 {
+    background-color: #d6ece3;
+    text-align: center; 
+    margin: 50px auto; 
+    height: 100%;
+    padding: 20px;
+}
+
+.description-title {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.description-all {
     display: flex;
+    justify-content: center;
+    gap: 50px;
+ 
+}
+
+.description-all p{
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.description-vip, .description-free {
+    flex: 1;
+    border: 1px solid rgb(255, 255, 255); 
+    border-radius: 15px;
+    background-color: #ffffff;
+    padding: 20px; 
+    max-width: 300px; 
+    box-sizing: border-box;
+}
+
+.description-vip ul,
+.description-free ul {
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+}
+
+.description-vip li, .description-free li {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+footer{
+    text-align: center;
+    padding: 50px;
+    background-color: black;
+}
+
+footer p{
+    color: white;
+}
+
+footer p::selection{
+    color: #ff6325;
 }

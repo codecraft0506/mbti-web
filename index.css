@@ -4,10 +4,6 @@ html,body{
 }
 
 .header-area{
-    background-image: url(../images/header-bg.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
     position: sticky;
     height: 110px;
     width: 100%;
@@ -15,10 +11,15 @@ html,body{
     left: 0;
     right: 0;
     z-index: 100;
-    -webkit-transition: all .5s ease 0s;
-    -moz-transition: all .5s ease 0s;
-    -o-transition: all .5s ease 0s;
-    transition: all .5s ease 0s;
+    padding: 40px;
+    background-color: #00106b;
+}
+
+.header-title a{
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff683a;
 }
 
 .header-content{
@@ -27,7 +28,6 @@ html,body{
     align-items: center;
     height: 100%; 
     padding: 0 20px; 
-    
 }
 
 .header-link{
@@ -35,26 +35,37 @@ html,body{
     list-style-type: none;
 }
 
+.header-link a{
+    text-decoration: none;
+    color: #ff683a;
+}
+
 .header-link li{
     margin: 0 20px;
 }
 
 .main-area{
-    text-align: center;
-    font-size: 70px;
+    text-align: center; 
+    height: 100%;
+    padding: 20px;
     color: #000;
 }
+
+.summary{
+    background-color: #e7dfea;
+}
+
+.summary p{
+    font-size: 28px;
+}
+
 
 .description-title{
     font-weight: bold;
 }
 
-.main-content-4 {
-    background-color: #d6ece3;
-    text-align: center; 
-    margin: 50px auto; 
-    height: 100%;
-    padding: 20px;
+.subscription{
+    background-color: #d6ece3; 
 }
 
 .description-title {
@@ -90,6 +101,7 @@ html,body{
     list-style: none; 
     padding: 0;
     margin: 0;
+    text-align: left;
 }
 
 .description-vip li, .description-free li {

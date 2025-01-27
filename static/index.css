@@ -3,7 +3,7 @@ html,body{
     padding: 0;
 }
 /*--------------------Pre header--------------------*/
-.breif-intro{
+.brief-intro{
     width: 100%;
     height: 100vh;
     text-align: center;
@@ -32,6 +32,55 @@ html,body{
       background-position: -400% 0%;
     }
   }
+
+/*--------------arrow--------------*/
+.scroll-down {
+    position: absolute;
+    left: 50%;
+    bottom: 5.5%;
+    border: transparent;
+    /* 距離底部的間距 */
+}
+
+.scroll-down:hover {
+    opacity: 50%;
+}
+
+.scroll-down::before,
+.scroll-down::after {
+    content: '';
+    position: absolute;
+    height: 2vh;
+    width: 2vh;
+    border-right: 2px solid rgb(0, 0, 0);
+    border-bottom: 2px solid rgb(0, 0, 0);
+    transform: translate(-50%, -50%) rotate(45deg);
+    transform-origin: center;
+    animation: scroll-down 1s ease-in-out infinite;
+}
+
+.scroll-down::after {
+    top: 1.5vh;
+    animation-delay: 0.3s;
+}
+
+@keyframes scroll-down {
+    0% {
+        opacity: 1;
+    }
+
+    30% {
+        opacity: 0.5;
+    }
+
+    60% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
 /*--------------------header area--------------------*/
 .header-area{
     position: sticky;
@@ -154,7 +203,6 @@ html,body{
 
 .description-vip ul,
 .description-free ul {
-    list-style: none; 
     padding: 0;
     margin: 0;
     text-align: left;
@@ -165,12 +213,12 @@ html,body{
     font-size: 16px;
 }
 /*--------------offline-party--------------*/
-.offline-party{
+.start-now{
     padding: 40vh;
     background-color: #f9eed7;
 }
 
-.offline-party p{
+.start-now p{
     font-size: 28px;
 }
 /*--------------------footer--------------------*/

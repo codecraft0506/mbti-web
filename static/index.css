@@ -41,13 +41,13 @@ html,body{
     left: 0;
     right: 0;
     z-index: 100;
-    padding: 40px;
-    background-color: #00106b71;
+    padding: 30px;
+    background-color: #ffffff;
 }
 
 .header-title a{
     text-decoration: none;
-    font-size: 24px;
+    font-size: 36px;
     font-weight: bold;
     color: #ff683a;
 }
@@ -67,11 +67,25 @@ html,body{
 
 .header-link a{
     text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
     color: #ff683a;
 }
 
 .header-link li{
     margin: 0 20px;
+}
+
+.list-link{
+    border: 1px solid #ff683a;
+    background-color: #ff683a;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 15px;
+}
+
+.list-link a{
+    color: #ffffff;
 }
 /*--------------------main area--------------------*/
 .main-area{

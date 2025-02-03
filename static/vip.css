@@ -1,13 +1,14 @@
 html,body{
     margin: 0;
     padding: 0;
+    width: 100%;
 }
 /*--------------------Pre header--------------------*/
 .brief-intro{
     width: 100%;
     height: 100vh;
     text-align: center;
-    font-size: 4em;
+    font-size: 3.5em;
     font-weight: bold;
     padding-top: 20vh;
     background: linear-gradient(
@@ -30,18 +31,28 @@ html,body{
       background-position: -400% 0%;
     }
   }
-.vip-summary{
-  display: flex;
-  gap: 10px;
-  justify-content: center;
+.brief-intro-title{
+  font-size: 1.3em;
+}
+.vip-summary .row{
+  margin-bottom: 10vh;
 }
 .summary-item{
   border: 2px solid rgb(0, 0, 0);
   border-radius: 15px;
 }
-.summary-item p{
-  font-size: 40px;
-  font-family: Yu Mincho;
+.summary-item a{
+  text-decoration: none;
+  color: #000;
+}
+.summary-item a:hover{
+  color: #ff683a;
+}
+.summary-item-title p{
+  font-size: 0.8em;
+}
+.summary-item-description{
+  font-size: 0.4em;
 }
 /*--------------------header area--------------------*/
 .header-area{
@@ -96,9 +107,17 @@ html,body{
     color: #000;
 }
 
+.main-area p{
+  font-size: 2em;
+}
+
 .main-area h1{
   font-size: 3em;
   font-weight: bold;
+}
+
+.annual-event {
+  background-color: #e7dfea;
 }
 
 .special{
@@ -111,8 +130,6 @@ html,body{
   gap: 5em;
 }
 .special-content img{
-  width: 30vw;
-  height: 30vh;
   border-radius: 10px;
   animation: loadimg 3s linear forwards;
   @keyframes loadimg {
@@ -129,4 +146,54 @@ html,body{
 
 .special-content p{
   font-size: 2em;
+}
+/*--------------------Resposive--------------------*/
+@media(max-width: 320px){
+  .brief-intro{
+    font-size: 2em;
+    padding-top: 1vh;
+  }
+  .summary-item-title p{
+    font-size: 0.6em;
+  }
+  .summary-item-description{
+    font-size: 0.3em;
+  }
+  .main-area h1{
+    font-size: 2.5em;
+  }
+}
+@media(max-width: 425px){
+  .brief-intro{
+    font-size: 2.5em;
+    padding-top: 3vh;
+  }
+  .summary-item-title p{
+    font-size: 0.8em;
+  }
+  .summary-item-description{
+    font-size: 0.5em;
+  }
+  .main-area p{
+    font-size: 1.5em;
+  }
+}
+
+@media(max-width: 768px){
+  .brief-intro{
+    font-size: 2.3em;
+    padding-top: 8vh;
+  }
+  .vip-summary .row{
+    margin-bottom: 0;
+  }
+  .summary-item-title p{
+    font-size: 0.8em;
+  }
+  .summary-item-description{
+    font-size: 0.5em;
+  }
+  .main-area p{
+    font-size: 1.5em;
+  }
 }

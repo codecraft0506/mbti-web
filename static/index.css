@@ -8,7 +8,7 @@ html,body{
     height: 100vh;
     text-align: center;
     display: flex;
-    font-size: 72px;
+    font-size: 5em;
     font-weight: bold;
     justify-content: center;
     align-items: center;
@@ -39,7 +39,6 @@ html,body{
     left: 50%;
     bottom: 5.5%;
     border: transparent;
-    /* 距離底部的間距 */
 }
 
 .scroll-down:hover {
@@ -84,7 +83,7 @@ html,body{
 /*--------------------header area--------------------*/
 .header-area{
     position: sticky;
-    height: 110px;
+    height: 10vh;
     width: 100%;
     top: 0;
     left: 0;
@@ -242,4 +241,10 @@ footer a:hover{
 
 footer p::selection{
     color: #ff6325;
+}
+/*--------------------Resposive--------------------*/
+@media(max-width: 320px){
+    .brief-intro{
+        font-size: 2em;
+    }
 }

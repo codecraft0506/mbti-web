@@ -1,117 +1,126 @@
-html,body{
-    margin: 0;
-    padding: 0;
-    width: 100%;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
+
 /*--------------------Pre header--------------------*/
-.brief-intro{
-    width: 100%;
-    height: 100vh;
-    text-align: center;
-    font-size: 3.5em;
-    font-weight: bold;
-    padding-top: 20vh;
-    background: linear-gradient(
-      45deg,
+.brief-intro {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  font-size: 3.5em;
+  font-weight: bold;
+  padding-top: 20vh;
+  background: linear-gradient(45deg,
       #e7dfea 0%,
       #d6ece3 25%,
       #d9eaf0 50%,
       #f9eed7 75%,
-      #e7dfea 100%
-    );
-    background-size: 400% 100%;
-    animation: rotateBackground 6s linear infinite;
+      #e7dfea 100%);
+  background-size: 400% 100%;
+  animation: rotateBackground 6s linear infinite;
+}
+
+@keyframes rotateBackground {
+  0% {
+    background-position: 0% 0%;
   }
-  
-  @keyframes rotateBackground {
-    0% {
-      background-position: 0% 0%;
-    }
-    100% {
-      background-position: -400% 0%;
-    }
+
+  100% {
+    background-position: -400% 0%;
   }
-.brief-intro-title{
+}
+
+.brief-intro-title {
   font-size: 1.3em;
 }
-.vip-summary .row{
+
+.vip-summary .row {
   margin-bottom: 10vh;
 }
-.summary-item{
+
+.summary-item {
   border: 2px solid rgb(0, 0, 0);
   border-radius: 15px;
 }
-.summary-item a{
+
+.summary-item a {
   text-decoration: none;
   color: #000;
 }
-.summary-item a:hover{
+
+.summary-item a:hover {
   color: #ff683a;
 }
-.summary-item-title p{
+
+.summary-item-title p {
   font-size: 0.8em;
 }
-.summary-item-description{
+
+.summary-item-description {
   font-size: 0.4em;
 }
+
 /*--------------------header area--------------------*/
-.header-area{
-    position: sticky;
-    height: 110px;
-    width: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 100;
-    padding: 30px;
-    background-color: #ffffff;
+.header-area {
+  position: sticky;
+  height: 110px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  padding: 30px;
+  background-color: #ffffff;
 }
 
-.header-title a{
-    text-decoration: none;
-    font-size: 36px;
-    font-weight: bold;
-    color: #ff683a;
+.header-title a {
+  text-decoration: none;
+  font-size: 36px;
+  font-weight: bold;
+  color: #ff683a;
 }
 
-.header-content{
-    justify-content: space-between;
-    display: flex; 
-    align-items: center;
-    height: 100%; 
-    padding: 0 20px; 
+.header-content {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 20px;
 }
 
-.header-link{
-    display: flex;
-    list-style-type: none;
+.header-link {
+  display: flex;
+  list-style-type: none;
 }
 
-.header-link a{
-    text-decoration: none;
-    font-size: 24px;
-    font-weight: bold;
-    color: #ff683a;
+.header-link a {
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+  color: #ff683a;
 }
 
-.header-link li{
-    margin: 0 20px;
+.header-link li {
+  margin: 0 20px;
 }
 
 /*--------------------main area--------------------*/
-.main-area{
-    text-align: center; 
-    height: 100%;
-    padding: 20px;
-    height: 100vh;
-    color: #000;
+.main-area {
+  text-align: center;
+  height: 100%;
+  padding: 20px;
+  height: 100vh;
+  color: #000;
 }
 
-.main-area p{
+.main-area p {
   font-size: 2em;
 }
 
-.main-area h1{
+.main-area h1 {
   font-size: 3em;
   font-weight: bold;
 }
@@ -120,80 +129,101 @@ html,body{
   background-color: #e7dfea;
 }
 
-.special{
+.special {
   background-color: #f9eed7;
 }
-.special-content{
+
+.special-content {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 5em;
 }
-.special-content img{
+
+.special-content img {
   border-radius: 10px;
   animation: loadimg 3s linear forwards;
+
   @keyframes loadimg {
-    0%{
+    0% {
       opacity: 1;
       transform: translateX(-100%);
     }
-    100%{
+
+    100% {
       opacity: 0;
       transform: translateX(0);
     }
   }
 }
 
-.special-content p{
+.special-content p {
   font-size: 2em;
 }
+
 /*--------------------Resposive--------------------*/
-@media(max-width: 320px){
-  .brief-intro{
-    font-size: 2em;
-    padding-top: 1vh;
+@media(max-width: 768px) {
+  .brief-intro {
+    font-size: 2.3em;
+    padding-top: 8vh;
   }
-  .summary-item-title p{
-    font-size: 0.6em;
+
+  .vip-summary .row {
+    margin-bottom: 0;
   }
-  .summary-item-description{
-    font-size: 0.3em;
-  }
-  .main-area h1{
-    font-size: 2.5em;
-  }
-}
-@media(max-width: 425px){
-  .brief-intro{
-    font-size: 2.5em;
-    padding-top: 3vh;
-  }
-  .summary-item-title p{
+
+  .summary-item-title p {
     font-size: 0.8em;
   }
-  .summary-item-description{
+
+  .summary-item-description {
     font-size: 0.5em;
   }
-  .main-area p{
+
+  .main-area p {
     font-size: 1.5em;
   }
 }
 
-@media(max-width: 768px){
-  .brief-intro{
-    font-size: 2.3em;
-    padding-top: 8vh;
+@media(max-width: 425px) {
+  .brief-intro {
+    font-size: 2.5em;
+    padding-top: 3vh;
   }
-  .vip-summary .row{
-    margin-bottom: 0;
-  }
-  .summary-item-title p{
+
+  .summary-item-title p {
     font-size: 0.8em;
   }
-  .summary-item-description{
+
+  .summary-item-description {
     font-size: 0.5em;
   }
-  .main-area p{
+
+  .main-area p {
     font-size: 1.5em;
+  }
+}
+
+@media(max-width: 320px) {
+  .brief-intro {
+    font-size: 1.5em;
+    padding-top: 1vh;
+  }
+
+  .row>* {
+    padding-bottom: 0.2em;
+  }
+
+  .summary-item-title p {
+    font-size: 0.8em;
+  }
+
+  .summary-item-description {
+    font-size: 0.6em;
+    margin-bottom: 0.5rem;
+  }
+
+  .main-area h1 {
+    font-size: 2.5em;
   }
 }

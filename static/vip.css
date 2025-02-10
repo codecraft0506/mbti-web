@@ -185,10 +185,22 @@ body {
   }
 }
 
-@media(max-width: 425px) {
+@media(max-width: 426px) {
   .brief-intro {
-    font-size: 2.5em;
-    padding-top: 3vh;
+    font-size: 1.5em;
+    padding-top: 1vh;
+  }
+
+  .brief-intro p {
+    margin-bottom: 0.6rem;
+  }
+
+  .row>* {
+    padding-bottom: 0.2em;
+  }
+
+  .vip-summary {
+    padding-top: 0.4em;
   }
 
   .summary-item-title p {
@@ -196,18 +208,29 @@ body {
   }
 
   .summary-item-description {
-    font-size: 0.5em;
+    font-size: 0.6em;
+    margin-bottom: 0.5rem;
   }
 
-  .main-area p {
+  .main-area h1 {
     font-size: 1.5em;
+    margin-bottom: 2.5rem
   }
+
+  .main-area {
+    border-bottom: 1px #c8c6c6 solid;
+  }
+
 }
 
 @media(max-width: 320px) {
   .brief-intro {
     font-size: 1.5em;
     padding-top: 1vh;
+  }
+
+  .brief-intro p {
+    margin-bottom: 0.6rem;
   }
 
   .row>* {
@@ -224,6 +247,11 @@ body {
   }
 
   .main-area h1 {
-    font-size: 2.5em;
+    font-size: 1.5em;
+    margin-bottom: 2.5rem
+  }
+
+  .main-area {
+    border-bottom: 1px #c8c6c6 solid;
   }
 }

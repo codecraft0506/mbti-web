@@ -2,7 +2,6 @@ html,
 body {
     margin: 0;
     padding: 0;
-    width: 100dvw;
 }
 
 /*--------------------Pre header--------------------*/
@@ -37,10 +36,14 @@ body {
 
 /*--------------arrow--------------*/
 .scroll-down {
+    display: flex;
+    justify-content: center;
+    width: 100%;
     position: absolute;
-    left: 50%;
-    bottom: 5.5%;
+    height: 5.5%;
+    bottom: 0;
     border: transparent;
+    /* 距離底部的間距 */
 }
 
 .scroll-down:hover {
@@ -258,5 +261,24 @@ footer p::selection {
 @media(max-width: 320px) {
     .brief-intro {
         font-size: 2em;
+    }
+
+    .header-area {
+        padding: 0;
+    }
+
+    .main-area {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 5%;
+    }
+
+    .main-area h1 {
+        font-size: 2em;
+    }
+
+    .main-area p {
+        font-size: 1em;
     }
 }

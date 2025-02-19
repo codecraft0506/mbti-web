@@ -191,8 +191,7 @@ body {
 .description-all {
     display: flex;
     justify-content: center;
-    gap: 50px;
-
+    gap: 3vw;
 }
 
 .description-all p {
@@ -267,13 +266,7 @@ footer p::selection {
         font-size: 2.1em;
     }
 
-    .main-area {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 5%;
-    }
-
+    
     .main-area h1 {
         font-size: 2em;
     }
@@ -281,17 +274,34 @@ footer p::selection {
     .main-area p {
         font-size: 1em;
     }
+
 }
 
 @media(min-width: 321px) and (max-width: 375px){
     .brief-intro{
+        font-size: 2.2em;
+    }
+
+    
+    .main-area h1 {
         font-size: 2.4em;
+    }
+
+    .main-area p {
+        font-size: 1.4em;
     }
 }
 
 @media(min-width: 376px) and (max-width: 425px){
     .brief-intro{
+        font-size: 2.5em;
+    }
+    .main-area h1 {
         font-size: 2.8em;
+    }
+
+    .main-area p {
+        font-size: 1.8em;
     }
 }
 
@@ -303,7 +313,6 @@ footer p::selection {
         position: absolute;
         text-align: center;
         top: 100%;
-        left: 0;
         right: 0;
         width: 100%;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -314,6 +323,10 @@ footer p::selection {
     }
     .header-link.active{
         display: flex;
+    }
+
+    .header-link li{
+        border-bottom: #000 1px;
     }
 
     .menu-toggle {
@@ -347,5 +360,12 @@ footer p::selection {
     }
     .list-link a{
       color: #ff683a;
+    }
+
+    .main-area {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 5%;
     }
 }   

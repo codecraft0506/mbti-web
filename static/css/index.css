@@ -121,7 +121,7 @@ body {
 
 .header-link a {
     text-decoration: none;
-    font-size: 24px;
+    font-size: 1.8em;
     font-weight: bold;
     color: #ff683a;
 }
@@ -145,9 +145,9 @@ body {
 /*--------------------main area--------------------*/
 .main-area {
     text-align: center;
-    height: 100%;
     padding: 20px;
     height: 100vh;
+    width: 100%;
     color: #000;
 }
 
@@ -171,15 +171,21 @@ body {
     font-size: 28px;
 }
 
+.ai-test button{
+    background-color: #ff683a;
+    border: #ff683a;
+    border-radius: 8px;
+    width: 6vw;
+    height: 3vh;
+    font-weight: bold;
+    color: #ffffff;
+}
+
 /*--------------subscription--------------*/
 
 .subscription {
     background-color: #d9eaf0;
     padding: 30vh;
-}
-
-.description-title {
-    font-weight: bold;
 }
 
 .description-title {
@@ -257,6 +263,7 @@ footer p::selection {
 }
 
 /*--------------------Resposive--------------------*/
+/*--------------Mobile-S--------------*/
 @media(max-width: 320px) {
     .brief-intro {
         font-size: 2em;
@@ -276,7 +283,7 @@ footer p::selection {
     }
 
 }
-
+/*--------------Mobile-M--------------*/
 @media(min-width: 321px) and (max-width: 375px){
     .brief-intro{
         font-size: 2.2em;
@@ -291,20 +298,20 @@ footer p::selection {
         font-size: 1.4em;
     }
 }
-
+/*--------------Mobile-L--------------*/
 @media(min-width: 376px) and (max-width: 425px){
     .brief-intro{
         font-size: 2.5em;
     }
     .main-area h1 {
-        font-size: 2.8em;
+        font-size: 2.5em;
     }
 
     .main-area p {
-        font-size: 1.8em;
+        font-size: 1.5em;
     }
 }
-
+/*--------------Mobile-S-M-L--------------*/
 @media(max-width: 425px){
     .header-link {
         display: none;
@@ -325,8 +332,8 @@ footer p::selection {
         display: flex;
     }
 
-    .header-link li{
-        border-bottom: #000 1px;
+    .header-link.active li{
+        border: 1px #000;
     }
 
     .menu-toggle {
@@ -369,3 +376,24 @@ footer p::selection {
         padding: 5%;
     }
 }   
+/*--------------Tablet--------------*/
+@media (min-width: 426px) and (max-width: 768px){
+    .brief-intro{
+        font-size: 2.8em;
+    }
+    .header-content{
+        padding-bottom: 5%;
+    }
+    .header-link a {
+        font-size: 1.3em;
+    }
+    .main-area {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 5%;
+    }
+    .description-title{
+        font-size: 2.5em;
+    }
+}

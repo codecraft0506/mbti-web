@@ -110,7 +110,7 @@ body {
 
 .header-title a {
     text-decoration: none;
-    font-size: 36px;
+    font-size: 3em;
     font-weight: bold;
     color: #ff683a;
 }
@@ -280,12 +280,14 @@ footer p::selection {
 
 /*--------------Mobile--------------*/
 @media(max-width: 767px) {
-
     .brief-intro {
         font-size: 10vw;
     }
     .header-title a {
         font-size: 10vw;
+    }
+    .header-content {
+        padding: 0;
     }
     .header-link {
         display: none;
@@ -298,10 +300,6 @@ footer p::selection {
         width: 100%;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         padding: 10px 0;
-    }
-
-    .header-content {
-        padding: 0;
     }
 
     .header-link.active {
@@ -369,5 +367,31 @@ footer p::selection {
 }
 
 /*--------------Tablet--------------*/
-@media (min-width: 426px) and (max-width: 768px) {
+@media (min-width: 768px) and ((max-width: 1023px)){
+    .brief-intro{
+        font-size: 10vw;
+    }
+    .header-content{
+        padding: 0;
+    }
+    .header-area .container {
+        max-width: 100%;
+        padding: 0;      
+        margin: 0;       
+    }
+    .header-title a{
+        font-size: 5vw;
+        white-space: nowrap;
+        padding-left: 1vw;
+    }
+    .header-link a{
+        white-space: nowrap;
+        font-size: 2.5vw;
+    }
+    .main-area {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 5%;
+    }
 }

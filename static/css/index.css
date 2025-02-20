@@ -190,7 +190,7 @@ body {
     border: #ff683a;
     border-radius: 8px;
     width: 6vw;
-    height: 3vh;
+    height: 4vh;
     font-weight: bold;
     color: #ffffff;
 }
@@ -243,14 +243,20 @@ body {
     font-size: 16px;
 }
 
-/*--------------offline-party--------------*/
+/*--------------start now--------------*/
 .start-now {
     padding: 40vh;
     background-color: #f9eed7;
 }
 
-.start-now p {
-    font-size: 28px;
+.start-now button {
+    background-color: #ff683a;
+    border: #ff683a;
+    border-radius: 8px;
+    width: 6vw;
+    height: 4vh;
+    font-weight: bold;
+    color: #ffffff;
 }
 
 /*--------------------footer--------------------*/
@@ -283,11 +289,15 @@ footer p::selection {
     .brief-intro {
         font-size: 10vw;
     }
+
+    .header-area .container {
+        max-width: 100%;
+        padding: 0;      
+        margin: 0;       
+    }
+
     .header-title a {
         font-size: 10vw;
-    }
-    .header-content {
-        padding: 0;
     }
     .header-link {
         display: none;
@@ -364,6 +374,18 @@ footer p::selection {
     .main-area p {
         font-size: 5vw;
     }
+
+    .ai-test button{
+        font-size: 3vw;
+        width: 20vw;
+        height: 4vh;
+    }
+
+    .start-now button{
+        font-size: 3vw;
+        width: 20vw;
+        height: 4vh;
+    }
 }
 
 /*--------------Tablet--------------*/
@@ -393,5 +415,17 @@ footer p::selection {
         flex-direction: column;
         justify-content: center;
         padding: 5%;
+    }
+
+    .ai-test button{
+        font-size: 3vw;
+        width: 20vw;
+        height: 4vh;
+    }
+
+    .start-now button{
+        font-size: 3vw;
+        width: 20vw;
+        height: 4vh;
     }
 }

@@ -140,23 +140,6 @@ body {
   gap: 5em;
 }
 
-.special-content img {
-  border-radius: 10px;
-  animation: loadimg 3s linear forwards;
-
-  @keyframes loadimg {
-    0% {
-      opacity: 1;
-      transform: translateX(-100%);
-    }
-
-    100% {
-      opacity: 0;
-      transform: translateX(0);
-    }
-  }
-}
-
 .special-content p {
   font-size: 2em;
 }

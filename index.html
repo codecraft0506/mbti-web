@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MBTI Club</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="static/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"">
 </head>
 <body>
     <!--**********Pre Header area**********-->
-    <div class="breif-intro">
-        <p>用全新的方式交朋友</p>
+    <div class=" brief-intro">
+    <p>用全新的方式交朋友</p>
+    <a class="scroll-down" href="#什麼是MBTI Club">
+        <div></div>
+    </a>
     </div>
     <!--**********Header area**********-->
     <header class="header-area header-sticky">
@@ -20,15 +25,20 @@
                 <div class="col-12">
                     <nav class="header-content">
                         <div class="header-title">
-                            <a href="/"><p>MBTI Club</p></a>
+                            <a href="/">MBTI Club</a>
                         </div>
                         <!--**********Header link**********-->
-                        <ul class="header-link">
+                        <div class="menu-toggle" id="mobile-menu-toggle">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </div>
+                        <!-- Header 連結 -->
+                        <ul class="header-link" id="mobile-menu">
                             <li><a href="#什麼是MBTI Club">什麼是MBTI Club</a></li>
                             <li><a href="#AI測驗">AI測驗</a></li>
                             <li><a href="#訂閱服務">訂閱服務</a></li>
-                            <li><a href="#共進晚餐">共進晚餐</a></li>
-                            <li class="list-link"><a href="/vip.html">VIP會籍</a></li>
+                            <li class="list-link"><a href="vip.html">VIP會籍</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -37,10 +47,16 @@
     </header>
     <!--**********Main area**********-->
     <div class="main-area summary" id="什麼是MBTI Club">
-        <h1 class="description-title">什麼是MBTI Club</h1>
-        <p>MBTI Club 是專為 MBTI 愛好者打造的專屬平台</p>
-        <p>無論你是新手還是 MBTI 資深專家</p>
-        <p>都能在這裡找到適合你的社群與活動</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="description-title">什麼是MBTI Club</h1>
+                    <p>MBTI Club 是專為 MBTI 愛好者打造的專屬平台</p>
+                    <p>無論你是新手還是 MBTI 資深專家</p>
+                    <p>都能在這裡找到適合你的社群與活動</p>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="main-area ai-test" id="AI測驗">
         <h1 class="description-title">透過我們的測驗來為您找尋適合的社群</h1>
@@ -71,13 +87,18 @@
             </div>
         </div>
     </div>
-    <div class="main-area offline-party" id="共進晚餐">
-        <h1 class="description-title">與不同MBTI的用戶一起共進晚餐</h1>
-        <p>參與每月定期舉辦的線下聚會，和他人一起玩遊戲，獲勝還可獲得小禮物</p>
+    <div class="main-area start-now">
+        <h1 class="description-title">現在就開始使用。</h1>
+        <div class="start-now-button">
+            <a href="/"><button>創立帳號</button></a>
+            <a href="/"><button>已有帳號</button></a>
+        </div>
     </div>
     <!--**********Footer area**********-->
     <footer>
         <p>2025 <a href="https://www.codecraft.services/">CodeCraft</a>™ All right reserved</p>
     </footer>
-</body>
+    <script src="static/js/index.js"></script>
+    </body>
+
 </html>
